@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Gates | شوكولاتة وحلويات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styel.css">
+</head>
+<body>
+
+<!---start header-->
+<header class="navbar">
+    <div class="container nav_content">
+        <!--start logo-->
+        <a href="#home" class="logo">
+            <img src="img/logo.jpeg" alt="7 Gates Logo">
+            <h1 dir="ltr">7 Gates</h1>
+        </a>
+        <!--end logo-->
+        <ul class="nav_links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#products">منتجاتنا</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+        <div class="nav_actions">
+            <!--start search-->
+            <form action="" method="get" id="search_form" class="search_bar">
+                <input type="text" class="search_input" name="q" placeholder="ابحث عن منتج...">
+                <button class="button_search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <!--end search-->
+            <!---cart start-->
+            <div class="cart">
+                <a href="checkout.html" class="cart-icon" title="السلة وإتمام الشراء"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+            <!---cart end-->
+        </div>
+    </div>
+</header>
+<!---end header-->
+
+<!---hero start-->
+<section class="hero" id="home">
+    <div class="container hero_content">
+        <div class="hero_text">
+            <h2>أطيب شوكولاتة في مكان واحد</h2>
+            <p>شوكولاتة بلجيكي، بندق، عسل، وعلب هدايا لكل المناسبات. اختار اللي يعجبك وضيفه للسلة في ثانية.</p>
+            <a href="#products" class="btn">تسوق الآن</a>
+        </div>
+        <div class="hero_img">
+            <img src="img/royalcocoa.jpeg" alt="شوكولاتة 7 Gates">
+        </div>
+    </div>
+</section>
+<!---hero end-->
+
+<!---products start-->
+<section class="products_section" id="products">
+    <div class="container">
+        <div class="section_title">
+            <h2>منتجاتنا</h2>
+            <p>اختار القسم، وحدد الكمية، واضغط أضف إلى السلة</p>
+        </div>
+        <!--start section---->
+        <div class="section">
+            <ul>
+                <li><a href="#" class="active" data-section="all">الكل</a></li>
+                <li><a href="#" data-section="Hazelnut Chocolate">Hazelnut Chocolate</a></li>
+                <li><a href="#" data-section="Belgian Chocolate">Belgian Chocolate</a></li>
+                <li><a href="#" data-section="Honey Chocolate">Honey Chocolate</a></li>
+                <li><a href="#" data-section="Assorted Sweets">Assorted Sweets</a></li>
+            </ul>
+        </div>
+        <!--end section---->
+        <div class="products">
+    <!---1-->
+<div class="product" data-section="Belgian Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/cocoacrown.jpeg" alt="Cocoa Crown" loading="lazy">
+        <span class="nuvaliable"> غير متوفر</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Belgian Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Cocoa Crown</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">120.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins" disabled>-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7" disabled>
+        <button class="qty_count_add" disabled>+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart" disabled>
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---2-->
+<div class="product" data-section="Assorted Sweets">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/شوكلاته.jpeg" alt="Chocolate Mix" loading="lazy">
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Assorted Sweets</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Chocolate Mix</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">95.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---3-->
+<div class="product" data-section="Hazelnut Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/hozeluntheaven.jpeg" alt="Hazelnut Heaven" loading="lazy">
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Hazelnut Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Hazelnut Heaven</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">140.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---4-->
+<div class="product" data-section="Belgian Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/luxe bites.jpeg" alt="Luxe Bites" loading="lazy">
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Belgian Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Luxe Bites</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">110.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---5-->
+<div class="product" data-section="Hazelnut Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/nutalladreem.jpeg" alt="Nutella Dream" loading="lazy">
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Hazelnut Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Nutella Dream</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">85.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---6-->
+<div class="product" data-section="Belgian Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/royalcocoa.jpeg" alt="Royal Cocoa" loading="lazy">
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Belgian Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Royal Cocoa</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">160.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---7-->
+<div class="product" data-section="Honey Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/goldenmeit.jpeg" alt="Golden Melt" loading="lazy">
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Honey Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Golden Melt</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">130.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---8-->
+<div class="product" data-section="Honey Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/velvetbites.jpeg" alt="Velvet Bites" loading="lazy">
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Honey Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Velvet Bites</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">150.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---9-->
+<div class="product" data-section="Assorted Sweets">
+    <!---img--->
+    <div class="product_img">
+        <img src="img/sweet2.jpeg" alt="Sweet Box" loading="lazy">
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Assorted Sweets</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Sweet Box</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">175.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---10-->
+<div class="product" data-section="Belgian Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500&q=70" alt="Dark & White Bars" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Belgian Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Dark & White Bars</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">70.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---11-->
+<div class="product" data-section="Assorted Sweets">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1769775264026-fbc4e974dea8?w=500&q=70" alt="Gourmet Box" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Assorted Sweets</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Gourmet Box</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">220.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---12-->
+<div class="product" data-section="Assorted Sweets">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1687795097254-f019f9d7fd17?w=500&q=70" alt="Classic Assorted Box" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Assorted Sweets</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Classic Assorted Box</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">185.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---13-->
+<div class="product" data-section="Honey Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1767510533183-425731f088a7?w=500&q=70" alt="Colorful Pralines" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Honey Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Colorful Pralines</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">145.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---14-->
+<div class="product" data-section="Hazelnut Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1548741487-18d363dc4469?w=500&q=70" alt="Hazelnut Truffles" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Hazelnut Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Hazelnut Truffles</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">125.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---15-->
+<div class="product" data-section="Belgian Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=70" alt="Gift Box" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Belgian Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Gift Box</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">200.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---16-->
+<div class="product" data-section="Assorted Sweets">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1773516035245-26f07b76c114?w=500&q=70" alt="Party Tray" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Assorted Sweets</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Party Tray</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">350.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---17-->
+<div class="product" data-section="Honey Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1526081715791-7c538f86060e?w=500&q=70" alt="Honey Pralines" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Honey Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Honey Pralines</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">135.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---18-->
+<div class="product" data-section="Belgian Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1573013835014-60d1590bfa38?w=500&q=70" alt="Black Box" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Belgian Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Black Box</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">190.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+    <!---19-->
+<div class="product" data-section="Hazelnut Chocolate">
+    <!---img--->
+    <div class="product_img">
+        <img src="https://images.unsplash.com/photo-1734692928513-351516b38869?w=500&q=70" alt="Nutty Mix Box" loading="lazy">
+        <span class="new_badge">جديد</span>
+    </div>
+     <!---section---->
+    <div class="product_section">
+        <a href="#" class="section_link">Hazelnut Chocolate</a>
+    </div>
+    <!----name--->
+    <div class="product_name">
+        <a href="#">Nutty Mix Box</a>
+    </div>
+     <!---price--->
+    <div class="product_price">
+        <a href="#">165.00 ج.م</a>
+    </div>
+    <!--quantity--->
+    <div class="qty_input">
+        <button class="qty_count_mins">-</button>
+        <input type="number" class="quantity" value="1" min="1" max="7">
+        <button class="qty_count_add">+</button>
+    </div>
+    <!--submit---->
+    <div class="submit">
+        <button class="add_to_cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            أضف إلى السلة
+        </button>
+    </div>
+</div>
+<!---product end----->
+
+            <p class="no_result">مفيش منتجات بالاسم ده</p>
+        </div>
+    </div>
+</section>
+<!---products end-->
+
+<!---about start-->
+<section class="about_section" id="about">
+    <div class="container about_box">
+        <h2>من نحن</h2>
+        <p>7 Gates متجر شوكولاتة وحلويات بيقدم تشكيلة من الشوكولاتة البلجيكي والبندق والعسل وعلب الهدايا، بجودة عالية وتغليف شيك يناسب كل المناسبات.</p>
+    </div>
+</section>
+<!---about end-->
+
+<!---contact start-->
+<section class="contact_section" id="contact">
+    <div class="container contact_wrapper">
+        <div class="contact_info">
+            <h2>تواصل معنا</h2>
+            <p>تابعنا على السوشيال ميديا عشان تعرف العروض الجديدة أول بأول.</p>
+            <p><a href="https://wa.me/201065372907" target="_blank" class="whatsapp_link"><i class="fa-brands fa-whatsapp"></i> <span dir="ltr">01065372907</span></a></p>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/201065372907" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="google_maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55019.43697481774!2d31.26854425136718!3d30.472514900000036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145875abe2586ee5%3A0xf4d709c01ac21e2f!2z2YXYqtis2LEg2YfYp9ix2K8g2LPYp9iqIF8gSGFyZFNhdA!5e0!3m2!1sar!2seg!4v1771802214160!5m2!1sar!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+<!---contact end-->
+
+<!---footer start-->
+<footer class="footer">
+    <p>programmed.k &copy; 7 gates 2026 حقوق الملكية</p>
+</footer>
+<!---footer end-->
+
+<a href="https://wa.me/201065372907" class="whatsapp_float" target="_blank" title="كلمنا على واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

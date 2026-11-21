@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Gates | إتمام الشراء</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styel.css">
+</head>
+<body>
+
+<!---start header-->
+<header class="navbar">
+    <div class="container nav_content">
+        <a href="index.html" class="logo">
+            <img src="img/logo.jpeg" alt="7 Gates Logo">
+            <h1 dir="ltr">7 Gates</h1>
+        </a>
+        <ul class="nav_links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="index.html#products">منتجاتنا</a></li>
+            <li><a href="index.html#about">من نحن</a></li>
+            <li><a href="index.html#contact">تواصل معنا</a></li>
+        </ul>
+        <div class="nav_actions">
+            <div class="cart">
+                <a href="checkout.html" class="cart-icon" title="السلة"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!---end header-->
+
+<!---checkout start-->
+<section class="checkout_section">
+    <div class="container">
+        <div class="section_title">
+            <h2>إتمام الشراء</h2>
+            <p>راجع طلبك واكتب بيانات التوصيل</p>
+        </div>
+
+        <!--لو السلة فاضية-->
+        <div class="empty_cart" id="empty_cart">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>السلة فاضية</h3>
+            <p>لسه مضفتش أي منتج للسلة.</p>
+            <a href="index.html#products" class="btn">ارجع للمنتجات</a>
+        </div>
+
+        <div class="checkout_wrapper" id="checkout_wrapper">
+            <!--start order-->
+            <div class="checkout_box">
+                <h3>طلبك</h3>
+                <div class="cart_items" id="cart_items">
+                    <!-- المنتجات هتتعرض من checkout.js -->
+                </div>
+                <div class="summary">
+                    <div class="summary_row"><span>المجموع</span><span id="subtotal">0 ج.م</span></div>
+                    <div class="summary_row"><span>التوصيل</span><span id="delivery">0 ج.م</span></div>
+                    <div class="summary_row total"><span>الإجمالي</span><span id="total">0 ج.م</span></div>
+                </div>
+            </div>
+            <!--end order-->
+
+            <!--start form-->
+            <form class="checkout_box checkout_form" id="checkout_form">
+                <h3>بيانات التوصيل</h3>
+                <label for="full_name">الاسم بالكامل</label>
+                <input type="text" id="full_name" required>
+
+                <label for="phone">رقم الموبايل</label>
+                <input type="tel" id="phone" placeholder="01xxxxxxxxx" pattern="01[0-9]{9}" required>
+
+                <label for="city">المحافظة</label>
+                <select id="city" required>
+                    <option value="">اختار المحافظة</option>
+                    <option>القاهرة</option>
+                    <option>الجيزة</option>
+                    <option>القليوبية</option>
+                    <option>الإسكندرية</option>
+                    <option>الشرقية</option>
+                    <option>الدقهلية</option>
+                    <option>الغربية</option>
+                    <option>المنوفية</option>
+                </select>
+
+                <label for="address">العنوان بالتفصيل</label>
+                <textarea id="address" rows="3" placeholder="الشارع، رقم العمارة، الدور" required></textarea>
+
+                <label>طريقة الدفع</label>
+                <div class="pay_methods">
+                    <label class="pay_method"><input type="radio" name="pay" value="كاش عند الاستلام" checked> <i class="fa-solid fa-money-bill-wave"></i> كاش عند الاستلام</label>
+                    <label class="pay_method"><input type="radio" name="pay" value="فيزا عند الاستلام"> <i class="fa-regular fa-credit-card"></i> فيزا عند الاستلام</label>
+                </div>
+
+                <label for="notes">ملاحظات (اختياري)</label>
+                <textarea id="notes" rows="2" placeholder="مثلاً: تغليف هدية"></textarea>
+
+                <button type="submit" class="btn confirm_btn">تأكيد الطلب</button>
+            </form>
+            <!--end form-->
+        </div>
+
+        <!--رسالة النجاح-->
+        <div class="order_done" id="order_done">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>تم استلام طلبك بنجاح</h3>
+            <p id="order_text"></p>
+            <a href="index.html" class="btn">ارجع للرئيسية</a>
+        </div>
+    </div>
+</section>
+<!---checkout end-->
+
+<!---footer start-->
+<footer class="footer">
+    <p>programmed.k &copy; 7 gates 2026 حقوق الملكية</p>
+</footer>
+<!---footer end-->
+
+<script src="checkout.js"></script>
+</body>
+</html>
